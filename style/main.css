@@ -1,0 +1,259 @@
+@import url('https://fonts.google.com/specimen/Dancing+Script?preview.text_type=custom');
+
+
+body{
+    margin:0;
+    background:white;
+    text-align: center;
+}
+
+header .logo{
+    margin-left: 5px;
+    font-family: "Arial Black", Times;
+    font-size:30px;
+}
+
+nav {
+    background: #080808;
+    width:100%;
+    overflow: auto;
+}
+
+h1{
+    display:inline-block;
+    position: relative;
+    color:black;
+    font-family: 'Dancing Script',cursive;
+}
+
+h1::after,h1::before{
+    content: " ";
+    position:absolute;
+    width:120px;
+    height:3px;
+    background-color:currentColor;
+    top: 0.6em;
+
+}
+
+h1::before{
+    left:-140px;
+}
+
+h1::after{
+    right:-140px;
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+
+li{
+    display:inline-block;
+    float:left;
+    padding:10px;
+
+}
+
+nav a{
+    width:120px;
+    text-decoration: none;
+    text-align: center;
+    background: #080808;
+    font-size: 17px;
+    color:white;
+    padding: 20px;
+    margin:20px;
+    font-family: Arial;
+}
+
+nav a:hover{
+    background: white;
+    color:black;
+}
+
+button:active{
+    transform: scale(1.1);
+}
+
+.active{
+    font-weight: bold;
+    color:chartreuse;
+}
+
+.container{
+    max-width: auto;
+    margin:auto;
+    background: #f2f2f2;
+    overflow:auto;
+}
+
+.figure{
+    max-width: 1200px;
+    margin:20px auto;
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10px,1fr));
+}
+
+.Galeria{
+    height: 400px;
+    margin:10px;
+    border:1px solid #ccc;
+    float:left;
+    width:390px;
+    position: relative;
+    margin:2px;
+    border:10px solid #fff;
+    box-shadow: 0px,0px,8px -1px rgba(0,0,0,.3);
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.Galeria img{
+    width:100%;
+    height:100%;  
+}
+
+.Galeria figcaption{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    background-color: rgba(0,0,0,.6);
+    color:#fff;
+    font-size: 18px;
+    opacity: 0;
+    transition:.4s;
+}
+
+.figure .Galeria:hover figcaption{
+    opacity:1;
+}
+
+.figure .Galeria:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+header img{
+    width: 50%;
+    height:40%;
+    margin:0px;
+    padding: 0px;
+    position:relative;
+    float:left;
+    
+}
+
+.contatos{
+    height: 600px;
+    margin: 0;
+    background-image: url(../img/tecido2.jpeg);
+}
+
+.box1, .box2, .box3, .box4{
+    margin-top: 100px;
+    width:300px;
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.conteudo-box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.box1 span,
+.box2 span,
+.box3 span,
+.box4 span{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: rgba(60, 117, 55, 0.733);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+.box1 p:nth-child(3),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3),
+.box4 p:nth-child(3){
+    color:#080808;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    line-height: 0px;
+}
+
+.box1 p:nth-child(4),
+.box2 p:nth-child(4),
+.box3 p:nth-child(4),
+.box4 p:nth-child(4){
+    color:#8f8f8f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+}
+
+.box1 p:nth-child(5),
+.box2 p:nth-child(5),
+.box3 p:nth-child(5),
+.box4 p:nth-child(5){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color:#080808;
+    margin: 0px 0px 30px 0px;
+}
+
+.box1 p:nth-child(6),
+.box2 p:nth-child(6),
+.box3 p:nth-child(6),
+.box4 p:nth-child(6),
+.box1 p:nth-child(7),
+.box2 p:nth-child(7),
+.box3 p:nth-child(7),
+.box4 p:nth-child(7){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#403e3e;
+    font-weight: bold;
+    margin: 0px 0px 30px 0px;
+}
+
+.box1 img{
+    width: 15%;
+    height: auto;
+    margin:10px;
+    border-radius: 5px;
+}
+
+footer{
+    padding:10px;
+    font-size:17px;
+    font-weight:bold;
+    text-align:center;
+    background: #928f8f;
+    color:white;
+    font-family: Arial;
+    letter-spacing: 1px;
+    
+}
