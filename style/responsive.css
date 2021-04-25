@@ -1,4 +1,4 @@
-@media screen and (max-width:700px){
+@media screen and (max-width:620px){
     header .container{
         display:flex;
         flex-direction: column;
@@ -27,6 +27,7 @@
 @media screen and (max-width:620px){
     .header{
         width: 100%;
+
     }
     .box1, .box2, .box3, .box4{
         width:80%;
@@ -55,20 +56,32 @@
     h1::after,h1::before{
     content: " ";
     position:absolute;
-    width:100%;
+    width:50%;
     height:3px;
     background-color:currentColor;
     top: 0.9em;
     }
 }
 
+@media screen and (max-width:620px){
 h1::before{
-    left:-70px;
+    left:110%;
+    }
 }
 
+@media screen and (max-width:620px){
 h1::after{
-    right:-70px;
+    right:110%;
+    }
 }
+
+@media screen and (max-width:620px){
+    .lines-effect{
+        width:30%;
+        }
+    }
+
+
    
 
 
@@ -153,8 +166,6 @@ h1::after{
 
 @media screen and (max-width:620px) {
     h1{
-        font-size: 17px;
+        font-size: 25px;
     }
 }
-
-
