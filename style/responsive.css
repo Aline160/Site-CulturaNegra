@@ -169,3 +169,36 @@ h1::after{
         font-size: 25px;
     }
 }
+
+
+@media screen and (max-width:1068px){
+    .blog-post{
+        max-width: 80rem;
+    }
+
+    .blog-post_img{
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+}
+
+@media screen and (max-width:868px){
+    .blog-post{
+        max-width: 70rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .blog-post{
+        padding:2.5rem;
+        flex-direction: column;
+    }
+
+    .blog-post_img {
+        padding-top: 50px;
+        min-width: 100%;
+        max-width: 100%;
+        transform: translate(0, -8rem);
+    }
+
+}
