@@ -40,7 +40,7 @@
     .card3 p:nth-child(3),
     .card4 p:nth-child(3){
         width: auto;
-        font-size: 10px;
+       
     }
 }
 
@@ -48,7 +48,7 @@
     .card2 p:nth-child(3),
     .card2 p:nth-child(6){
         width: auto;
-        font-size: 8px;
+        font-size: 15px;
     }
 }
 
@@ -177,8 +177,10 @@ h1::after{
     }
 
     .blog-post_img{
-        min-width: 30rem;
-        max-width: 30rem;
+        width: 20%;
+        height: auto;
+        margin:10px;
+        border-radius: 5px;
     }
 }
 
@@ -219,4 +221,7 @@ h1::after{
     .subtitulo-footer{
         font-size: 12px;
     }
+
+    .containerPrincipal{
+        height: 300px;
 }
