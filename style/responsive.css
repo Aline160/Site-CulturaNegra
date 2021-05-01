@@ -202,3 +202,21 @@ h1::after{
     }
 
 }
+
+
+@media screen and (max-width:620px){
+    .sobre-nos{
+        font-size: 36px;
+        text-align: center;
+        text-decoration: none;
+        text-align: justify;
+    }
+
+    .titulo-footer{
+        font-size: 20px;
+    }
+
+    .subtitulo-footer{
+        font-size: 12px;
+    }
+}
