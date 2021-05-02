@@ -253,6 +253,13 @@ header .titulo{
     float: center;
 }
 
+.fundo-branco{
+    background-color: white;
+    max-width: 90%;
+    min-width: 90%;
+    
+}
+
 /*galeria*/
 
 
