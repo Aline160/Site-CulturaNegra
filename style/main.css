@@ -304,6 +304,9 @@ header .titulo{
 
 /*galeria*/
 
+.blog-post-info{
+    margin-right: 50%;
+}
 
 .figure{
     max-width: 1200px;
